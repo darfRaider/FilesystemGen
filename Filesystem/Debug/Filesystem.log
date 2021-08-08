@@ -1,0 +1,6 @@
+﻿  Filesystem.cpp
+  The contents of <filesystem> are available only with C++17 or later.
+C:\Users\freak\source\repos\Filesystem\Filesystem\Filesystem.cpp(7,43): error C3083: 'filesystem': the symbol to the left of a '::' must be a type
+C:\Users\freak\source\repos\Filesystem\Filesystem\Filesystem.cpp(7,55): error C2039: 'recursive_directory_iterator': is not a member of 'std'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\include\iostream(19): message : see declaration of 'std'
+C:\Users\freak\source\repos\Filesystem\Filesystem\Filesystem.cpp(7,83): error C2061: syntax error: identifier 'recursive_directory_iterator'
