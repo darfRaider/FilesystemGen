@@ -17,6 +17,7 @@
 
 using recursive_directory_iterator =
     std::filesystem::recursive_directory_iterator;
+
 struct File {
   uint32_t id;
   std::string filename;
@@ -105,7 +106,6 @@ int main(int argc, char** argv) {
   const size_t BufferSize = 144 * 7 * 1024;
   std::istream* input = NULL;
   std::ifstream file;
-
   int n_reads_failed = 0;
   std::string root_dir_str;
   if (argc > 1) {
