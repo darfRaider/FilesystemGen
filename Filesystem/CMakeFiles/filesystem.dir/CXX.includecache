@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sam/git/FilesystemGen/Filesystem/Filesystem.cpp
+algorithm
+-
+filesystem
+-
+fstream
+-
+iostream
+-
+string
+-
+vector
+-
+

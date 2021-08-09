@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16.3)
+project(FilesystemReader)
+set(CMAKE_CXX_STANDARD 17)
+#set(DCMAKE_CXX_COMPILER /usr/bin/g++-9 )
+add_executable(filesystem Filesystem.cpp)
