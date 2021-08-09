@@ -1,434 +1,594 @@
 {
-	"fname": "a.out",
-	"suffix": "out",
-	"path": "./a.out",
-	"modified": 1628504575,
-	"size": 71584
-},
-{
-	"fname": "Filesystem.vcxproj.filters",
-	"suffix": "filters",
-	"path": "./Filesystem.vcxproj.filters",
-	"modified": 1628497173,
-	"size": 962
-},
-{
-	"fname": "Filesystem.log",
-	"suffix": "log",
-	"path": "./x64/Debug/Filesystem.log",
-	"modified": 1628497173,
-	"size": 108
-},
-{
-	"fname": "Filesystem.ilk",
-	"suffix": "ilk",
-	"path": "./x64/Debug/Filesystem.ilk",
-	"modified": 1628497173,
-	"size": 1471364
-},
-{
-	"fname": "filesystem.obj.enc",
-	"suffix": "enc",
-	"path": "./x64/Debug/filesystem.obj.enc",
-	"modified": 1628497174,
-	"size": 1193227
-},
-{
-	"fname": "Filesystem.obj",
-	"suffix": "obj",
-	"path": "./x64/Debug/Filesystem.obj",
-	"modified": 1628497174,
-	"size": 1305085
-},
-{
-	"fname": "vc142.idb",
-	"suffix": "idb",
-	"path": "./x64/Debug/vc142.idb",
-	"modified": 1628497174,
-	"size": 199680
-},
-{
-	"fname": "link.command.1.tlog",
-	"suffix": "tlog",
-	"path": "./x64/Debug/Filesystem.tlog/link.command.1.tlog",
-	"modified": 1628497174,
-	"size": 1322
-},
-{
-	"fname": "CL.read.1.tlog",
-	"suffix": "tlog",
-	"path": "./x64/Debug/Filesystem.tlog/CL.read.1.tlog",
-	"modified": 1628497174,
-	"size": 24106
-},
-{
-	"fname": "CL.write.1.tlog",
-	"suffix": "tlog",
-	"path": "./x64/Debug/Filesystem.tlog/CL.write.1.tlog",
-	"modified": 1628497174,
-	"size": 572
-},
-{
-	"fname": "Filesystem.lastbuildstate",
-	"suffix": "lastbuildstate",
-	"path": "./x64/Debug/Filesystem.tlog/Filesystem.lastbuildstate",
-	"modified": 1628497174,
-	"size": 281
-},
-{
-	"fname": "link.write.1.tlog",
-	"suffix": "tlog",
-	"path": "./x64/Debug/Filesystem.tlog/link.write.1.tlog",
-	"modified": 1628497174,
-	"size": 568
-},
-{
-	"fname": "link.read.1.tlog",
-	"suffix": "tlog",
-	"path": "./x64/Debug/Filesystem.tlog/link.read.1.tlog",
-	"modified": 1628497174,
-	"size": 3706
-},
-{
-	"fname": "CL.command.1.tlog",
-	"suffix": "tlog",
-	"path": "./x64/Debug/Filesystem.tlog/CL.command.1.tlog",
-	"modified": 1628497174,
-	"size": 804
-},
-{
-	"fname": "Filesystem.exe.recipe",
-	"suffix": "recipe",
-	"path": "./x64/Debug/Filesystem.exe.recipe",
-	"modified": 1628497173,
-	"size": 296
-},
-{
-	"fname": "vc142.pdb",
-	"suffix": "pdb",
-	"path": "./x64/Debug/vc142.pdb",
-	"modified": 1628497174,
-	"size": 700416
-},
-{
-	"fname": "test.log",
-	"suffix": "log",
-	"path": "./test.log",
-	"modified": 1628505052,
-	"size": 0
-},
-{
-	"fname": "filesystem",
-	"suffix": "",
-	"path": "./filesystem",
-	"modified": 1628504817,
-	"size": 71584
-},
-{
-	"fname": "Filesystem.vcxproj",
-	"suffix": "vcxproj",
-	"path": "./Filesystem.vcxproj",
-	"modified": 1628497173,
-	"size": 7105
-},
-{
-	"fname": "프로그램.txt",
-	"suffix": "txt",
-	"path": "./프로그램.txt",
-	"modified": 1628497174,
-	"size": 13
-},
-{
-	"fname": "φöäδí£Ω╖╕δ₧¿.zip.json",
-	"suffix": "json",
-	"path": "./φöäδí£Ω╖╕δ₧¿.zip.json",
-	"modified": 1628497174,
-	"size": 676
-},
-{
+	"id": 0,
 	"fname": "φöäδí£Ω╖╕δ₧¿.README",
 	"suffix": "README",
 	"path": "./φöäδí£Ω╖╕δ₧¿.README",
 	"modified": 1628497174,
+	"md5filehash": "96b97196a0cf4a394d04505ff7c95049",
 	"size": 183
 },
 {
-	"fname": "Filesystem.log",
-	"suffix": "log",
-	"path": "./Debug/Filesystem.log",
-	"modified": 1628497173,
-	"size": 666
+	"id": 1,
+	"fname": "φöäδí£Ω╖╕δ₧¿.zip.json",
+	"suffix": "json",
+	"path": "./φöäδí£Ω╖╕δ₧¿.zip.json",
+	"modified": 1628497174,
+	"md5filehash": "67f3581720c809b57f18b6ff9f6a713c",
+	"size": 676
 },
 {
-	"fname": "vc142.idb",
-	"suffix": "idb",
-	"path": "./Debug/vc142.idb",
-	"modified": 1628497173,
-	"size": 19456
-},
-{
-	"fname": "unsuccessfulbuild",
-	"suffix": "",
-	"path": "./Debug/Filesystem.tlog/unsuccessfulbuild",
-	"modified": 1628497173,
-	"size": 0
-},
-{
-	"fname": "Filesystem.lastbuildstate",
-	"suffix": "lastbuildstate",
-	"path": "./Debug/Filesystem.tlog/Filesystem.lastbuildstate",
-	"modified": 1628497173,
-	"size": 283
-},
-{
-	"fname": "CL.command.1.tlog",
-	"suffix": "tlog",
-	"path": "./Debug/Filesystem.tlog/CL.command.1.tlog",
-	"modified": 1628497173,
-	"size": 2
-},
-{
-	"fname": "vc142.pdb",
-	"suffix": "pdb",
-	"path": "./Debug/vc142.pdb",
-	"modified": 1628497173,
-	"size": 235008
-},
-{
-	"fname": "CMakeCache.txt",
+	"id": 2,
+	"fname": "프로그램.txt",
 	"suffix": "txt",
-	"path": "./CMakeCache.txt",
-	"modified": 1628504548,
-	"size": 13821
+	"path": "./프로그램.txt",
+	"modified": 1628497174,
+	"md5filehash": "495fcd6fa8ba93adabc1051d292e2ea7",
+	"size": 13
 },
 {
-	"fname": "Makefile.cmake",
-	"suffix": "cmake",
-	"path": "./CMakeFiles/Makefile.cmake",
-	"modified": 1628504662,
-	"size": 1983
+	"id": 3,
+	"fname": ".Filesystem.cpp.swp",
+	"suffix": "swp",
+	"path": "./.Filesystem.cpp.swp",
+	"modified": 1628510930,
+	"md5filehash": "e3b4119ebb4cd2d6b02afd8c2be60267",
+	"size": 20480
 },
 {
-	"fname": "progress.marks",
-	"suffix": "marks",
-	"path": "./CMakeFiles/progress.marks",
-	"modified": 1628504662,
-	"size": 2
+	"id": 4,
+	"fname": ".md5.cpp.swp",
+	"suffix": "swp",
+	"path": "./.md5.cpp.swp",
+	"modified": 1628506618,
+	"md5filehash": "78a5a671e1daf7199e46b2a3f560fd20",
+	"size": 16384
 },
 {
-	"fname": "Makefile2",
-	"suffix": "",
-	"path": "./CMakeFiles/Makefile2",
-	"modified": 1628504662,
-	"size": 3332
-},
-{
-	"fname": "CMakeOutput.log",
-	"suffix": "log",
-	"path": "./CMakeFiles/CMakeOutput.log",
-	"modified": 1628504548,
-	"size": 44114
-},
-{
-	"fname": "TargetDirectories.txt",
-	"suffix": "txt",
-	"path": "./CMakeFiles/TargetDirectories.txt",
-	"modified": 1628504662,
-	"size": 198
-},
-{
-	"fname": "CMakeDirectoryInformation.cmake",
-	"suffix": "cmake",
-	"path": "./CMakeFiles/CMakeDirectoryInformation.cmake",
-	"modified": 1628504548,
-	"size": 652
-},
-{
-	"fname": "CMakeDetermineCompilerABI_CXX.bin",
-	"suffix": "bin",
-	"path": "./CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin",
-	"modified": 1628504548,
-	"size": 16560
-},
-{
-	"fname": "CMakeSystem.cmake",
-	"suffix": "cmake",
-	"path": "./CMakeFiles/3.16.3/CMakeSystem.cmake",
-	"modified": 1628504547,
-	"size": 398
-},
-{
-	"fname": "CMakeCCompiler.cmake",
-	"suffix": "cmake",
-	"path": "./CMakeFiles/3.16.3/CMakeCCompiler.cmake",
-	"modified": 1628504548,
-	"size": 2424
-},
-{
-	"fname": "CMakeDetermineCompilerABI_C.bin",
-	"suffix": "bin",
-	"path": "./CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin",
-	"modified": 1628504548,
-	"size": 16544
-},
-{
-	"fname": "CMakeCXXCompiler.cmake",
-	"suffix": "cmake",
-	"path": "./CMakeFiles/3.16.3/CMakeCXXCompiler.cmake",
-	"modified": 1628504548,
-	"size": 5450
-},
-{
+	"id": 5,
 	"fname": "a.out",
 	"suffix": "out",
-	"path": "./CMakeFiles/3.16.3/CompilerIdCXX/a.out",
-	"modified": 1628504547,
-	"size": 16720
+	"path": "./a.out",
+	"modified": 1628504575,
+	"md5filehash": "41564b5dab7fead49c0ed394a939e6a7",
+	"size": 71584
 },
 {
-	"fname": "CMakeCXXCompilerId.cpp",
-	"suffix": "cpp",
-	"path": "./CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
-	"modified": 1628504547,
-	"size": 20091
-},
-{
+	"id": 6,
 	"fname": "a.out",
 	"suffix": "out",
 	"path": "./CMakeFiles/3.16.3/CompilerIdC/a.out",
 	"modified": 1628504547,
+	"md5filehash": "1ac00dc0801217d52f83a82c8caae0c7",
 	"size": 16704
 },
 {
+	"id": 7,
+	"fname": "a.out",
+	"suffix": "out",
+	"path": "./CMakeFiles/3.16.3/CompilerIdCXX/a.out",
+	"modified": 1628504547,
+	"md5filehash": "316cbd551a2790aadbef8b1c0aa00edf",
+	"size": 16720
+},
+{
+	"id": 8,
+	"fname": "build.make",
+	"suffix": "make",
+	"path": "./CMakeFiles/filesystem.dir/build.make",
+	"modified": 1628505411,
+	"md5filehash": "cb0f9d2667c32e6fc7019620c8795537",
+	"size": 5332
+},
+{
+	"id": 9,
+	"fname": "CL.command.1.tlog",
+	"suffix": "tlog",
+	"path": "./x64/Debug/Filesystem.tlog/CL.command.1.tlog",
+	"modified": 1628497174,
+	"md5filehash": "67f87de72178f58d2c4958043c8b0e2c",
+	"size": 804
+},
+{
+	"id": 10,
+	"fname": "CL.command.1.tlog",
+	"suffix": "tlog",
+	"path": "./Debug/Filesystem.tlog/CL.command.1.tlog",
+	"modified": 1628497173,
+	"md5filehash": "f3b25701fe362ec84616a93a45ce9998",
+	"size": 2
+},
+{
+	"id": 11,
+	"fname": "CL.read.1.tlog",
+	"suffix": "tlog",
+	"path": "./x64/Debug/Filesystem.tlog/CL.read.1.tlog",
+	"modified": 1628497174,
+	"md5filehash": "1fecf8b2c53fc0ef42b2c22a8c11d55e",
+	"size": 24106
+},
+{
+	"id": 12,
+	"fname": "CL.write.1.tlog",
+	"suffix": "tlog",
+	"path": "./x64/Debug/Filesystem.tlog/CL.write.1.tlog",
+	"modified": 1628497174,
+	"md5filehash": "a520cc3e8c139066783c7689eab53226",
+	"size": 572
+},
+{
+	"id": 13,
+	"fname": "cmake.check_cache",
+	"suffix": "check_cache",
+	"path": "./CMakeFiles/cmake.check_cache",
+	"modified": 1628505411,
+	"md5filehash": "448d8050798441c3c0911462399ba145",
+	"size": 85
+},
+{
+	"id": 14,
+	"fname": "CMakeCache.txt",
+	"suffix": "txt",
+	"path": "./CMakeCache.txt",
+	"modified": 1628504548,
+	"md5filehash": "a3a78b43a93fb3639b6c10d15381bfdc",
+	"size": 13821
+},
+{
+	"id": 15,
+	"fname": "CMakeCCompiler.cmake",
+	"suffix": "cmake",
+	"path": "./CMakeFiles/3.16.3/CMakeCCompiler.cmake",
+	"modified": 1628504548,
+	"md5filehash": "ace3dfae10be92cf45c042627d59a11f",
+	"size": 2424
+},
+{
+	"id": 16,
 	"fname": "CMakeCCompilerId.c",
 	"suffix": "c",
 	"path": "./CMakeFiles/3.16.3/CompilerIdC/CMakeCCompilerId.c",
 	"modified": 1628504547,
+	"md5filehash": "4114e19e44e0e1e35f4b47be52d80782",
 	"size": 20271
 },
 {
-	"fname": "depend.internal",
-	"suffix": "internal",
-	"path": "./CMakeFiles/filesystem.dir/depend.internal",
-	"modified": 1628504816,
-	"size": 198
-},
-{
-	"fname": "progress.make",
-	"suffix": "make",
-	"path": "./CMakeFiles/filesystem.dir/progress.make",
-	"modified": 1628504662,
-	"size": 43
-},
-{
-	"fname": "link.txt",
-	"suffix": "txt",
-	"path": "./CMakeFiles/filesystem.dir/link.txt",
-	"modified": 1628504548,
-	"size": 78
-},
-{
-	"fname": "depend.make",
-	"suffix": "make",
-	"path": "./CMakeFiles/filesystem.dir/depend.make",
-	"modified": 1628504816,
-	"size": 160
-},
-{
-	"fname": "DependInfo.cmake",
+	"id": 17,
+	"fname": "CMakeCXXCompiler.cmake",
 	"suffix": "cmake",
-	"path": "./CMakeFiles/filesystem.dir/DependInfo.cmake",
+	"path": "./CMakeFiles/3.16.3/CMakeCXXCompiler.cmake",
 	"modified": 1628504548,
-	"size": 603
+	"md5filehash": "b04581c4b07f1ceb1ae7a4fc00493f68",
+	"size": 5450
 },
 {
-	"fname": "build.make",
-	"suffix": "make",
-	"path": "./CMakeFiles/filesystem.dir/build.make",
+	"id": 18,
+	"fname": "CMakeCXXCompilerId.cpp",
+	"suffix": "cpp",
+	"path": "./CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+	"modified": 1628504547,
+	"md5filehash": "3119332551b1f4dafd1cdf803cce84df",
+	"size": 20091
+},
+{
+	"id": 19,
+	"fname": "CMakeDetermineCompilerABI_C.bin",
+	"suffix": "bin",
+	"path": "./CMakeFiles/3.16.3/CMakeDetermineCompilerABI_C.bin",
 	"modified": 1628504548,
-	"size": 4087
+	"md5filehash": "ffe47b5013b1527007c0da2be6495a07",
+	"size": 16544
 },
 {
-	"fname": "CXX.includecache",
-	"suffix": "includecache",
-	"path": "./CMakeFiles/filesystem.dir/CXX.includecache",
-	"modified": 1628504816,
-	"size": 272
+	"id": 20,
+	"fname": "CMakeDetermineCompilerABI_CXX.bin",
+	"suffix": "bin",
+	"path": "./CMakeFiles/3.16.3/CMakeDetermineCompilerABI_CXX.bin",
+	"modified": 1628504548,
+	"md5filehash": "c03e14fb02223c7821c38ea62931ff44",
+	"size": 16560
 },
 {
-	"fname": "cmake_clean.cmake",
+	"id": 21,
+	"fname": "CMakeDirectoryInformation.cmake",
 	"suffix": "cmake",
-	"path": "./CMakeFiles/filesystem.dir/cmake_clean.cmake",
-	"modified": 1628504662,
-	"size": 260
-},
-{
-	"fname": "flags.make",
-	"suffix": "make",
-	"path": "./CMakeFiles/filesystem.dir/flags.make",
+	"path": "./CMakeFiles/CMakeDirectoryInformation.cmake",
 	"modified": 1628504548,
-	"size": 195
+	"md5filehash": "5280b9ffd14aee4833553ead782f2907",
+	"size": 652
 },
 {
-	"fname": "Filesystem.cpp.o",
-	"suffix": "o",
-	"path": "./CMakeFiles/filesystem.dir/Filesystem.cpp.o",
-	"modified": 1628504817,
-	"size": 117736
-},
-{
-	"fname": "cmake.check_cache",
-	"suffix": "check_cache",
-	"path": "./CMakeFiles/cmake.check_cache",
-	"modified": 1628504662,
-	"size": 85
-},
-{
+	"id": 22,
 	"fname": "CMakeLists.txt",
 	"suffix": "txt",
 	"path": "./CMakeLists.txt",
-	"modified": 1628504658,
-	"size": 176
+	"modified": 1628505410,
+	"md5filehash": "5db6aed4f7eb1e0a6e4b3dbc2152947f",
+	"size": 184
 },
 {
+	"id": 23,
+	"fname": "CMakeOutput.log",
+	"suffix": "log",
+	"path": "./CMakeFiles/CMakeOutput.log",
+	"modified": 1628504548,
+	"md5filehash": "84e6b714f94793332b30cbdd9c7c620b",
+	"size": 44114
+},
+{
+	"id": 24,
+	"fname": "CMakeSystem.cmake",
+	"suffix": "cmake",
+	"path": "./CMakeFiles/3.16.3/CMakeSystem.cmake",
+	"modified": 1628504547,
+	"md5filehash": "ab2e7413627dbcf67bedab2f31c2c85d",
+	"size": 398
+},
+{
+	"id": 25,
+	"fname": "cmake_clean.cmake",
+	"suffix": "cmake",
+	"path": "./CMakeFiles/filesystem.dir/cmake_clean.cmake",
+	"modified": 1628505411,
+	"md5filehash": "395d356017290fb538c550cfbdacd6a0",
+	"size": 300
+},
+{
+	"id": 26,
 	"fname": "cmake_install.cmake",
 	"suffix": "cmake",
 	"path": "./cmake_install.cmake",
 	"modified": 1628503905,
+	"md5filehash": "af1174a7816522e2af6754cfd27948c1",
 	"size": 1522
 },
 {
-	"fname": "test.json",
-	"suffix": "json",
-	"path": "./test.json",
-	"modified": 1628505052,
-	"size": 8015
+	"id": 27,
+	"fname": "CXX.includecache",
+	"suffix": "includecache",
+	"path": "./CMakeFiles/filesystem.dir/CXX.includecache",
+	"modified": 1628510933,
+	"md5filehash": "b3558c757e32ab974b4af16eaa88be27",
+	"size": 408
 },
 {
-	"fname": ".Filesystem.cpp.swp",
-	"suffix": "swp",
-	"path": "./.Filesystem.cpp.swp",
-	"modified": 1628504822,
-	"size": 12288
+	"id": 28,
+	"fname": "depend.internal",
+	"suffix": "internal",
+	"path": "./CMakeFiles/filesystem.dir/depend.internal",
+	"modified": 1628510933,
+	"md5filehash": "2f824fb5a3f64df255f99705f2e06737",
+	"size": 374
 },
 {
-	"fname": "Makefile",
+	"id": 29,
+	"fname": "depend.make",
+	"suffix": "make",
+	"path": "./CMakeFiles/filesystem.dir/depend.make",
+	"modified": 1628510933,
+	"md5filehash": "6b8e7cfc7febf546ffbea16e04ac8daa",
+	"size": 299
+},
+{
+	"id": 30,
+	"fname": "DependInfo.cmake",
+	"suffix": "cmake",
+	"path": "./CMakeFiles/filesystem.dir/DependInfo.cmake",
+	"modified": 1628505411,
+	"md5filehash": "e237a55840f02dfca53a43db60ff4df4",
+	"size": 731
+},
+{
+	"id": 31,
+	"fname": "filesystem",
 	"suffix": "",
-	"path": "./Makefile",
-	"modified": 1628504662,
-	"size": 4964
+	"path": "./filesystem",
+	"modified": 1628510934,
+	"md5filehash": "bdd3339d96fe6e8f34fd74c6c04d21f6",
+	"size": 96384
 },
 {
+	"id": 32,
 	"fname": "Filesystem.cpp",
 	"suffix": "cpp",
 	"path": "./Filesystem.cpp",
-	"modified": 1628504814,
-	"size": 3179
+	"modified": 1628510930,
+	"md5filehash": "bc72aea3ff09b5c1954910e98b6057ec",
+	"size": 5068
 },
 {
+	"id": 33,
+	"fname": "Filesystem.cpp.o",
+	"suffix": "o",
+	"path": "./CMakeFiles/filesystem.dir/Filesystem.cpp.o",
+	"modified": 1628510934,
+	"md5filehash": "e2491868ad551d893b10b5ccba5360a1",
+	"size": 157184
+},
+{
+	"id": 34,
+	"fname": "Filesystem.exe.recipe",
+	"suffix": "recipe",
+	"path": "./x64/Debug/Filesystem.exe.recipe",
+	"modified": 1628497173,
+	"md5filehash": "9b3eecb133667f5ac59be4c490f17c7d",
+	"size": 296
+},
+{
+	"id": 35,
+	"fname": "Filesystem.ilk",
+	"suffix": "ilk",
+	"path": "./x64/Debug/Filesystem.ilk",
+	"modified": 1628497173,
+	"md5filehash": "f325a5caa69ebab31d5eaa1fbbce2b66",
+	"size": 1471364
+},
+{
+	"id": 36,
+	"fname": "Filesystem.lastbuildstate",
+	"suffix": "lastbuildstate",
+	"path": "./Debug/Filesystem.tlog/Filesystem.lastbuildstate",
+	"modified": 1628497173,
+	"md5filehash": "33b0171b6db36df2f46481ec166476b1",
+	"size": 283
+},
+{
+	"id": 37,
+	"fname": "Filesystem.lastbuildstate",
+	"suffix": "lastbuildstate",
+	"path": "./x64/Debug/Filesystem.tlog/Filesystem.lastbuildstate",
+	"modified": 1628497174,
+	"md5filehash": "069e2af1ea35e2b5ef2efbba50c035a8",
+	"size": 281
+},
+{
+	"id": 38,
+	"fname": "Filesystem.log",
+	"suffix": "log",
+	"path": "./Debug/Filesystem.log",
+	"modified": 1628497173,
+	"md5filehash": "f750d6b17e0011754a864f5491d7c630",
+	"size": 666
+},
+{
+	"id": 39,
+	"fname": "Filesystem.log",
+	"suffix": "log",
+	"path": "./x64/Debug/Filesystem.log",
+	"modified": 1628497173,
+	"md5filehash": "24eb3c7b6abcee7ad5f76afb5934afdc",
+	"size": 108
+},
+{
+	"id": 40,
+	"fname": "Filesystem.obj",
+	"suffix": "obj",
+	"path": "./x64/Debug/Filesystem.obj",
+	"modified": 1628497174,
+	"md5filehash": "9dd00ca6284a0626c9b609c1c383a046",
+	"size": 1305085
+},
+{
+	"id": 41,
+	"fname": "filesystem.obj.enc",
+	"suffix": "enc",
+	"path": "./x64/Debug/filesystem.obj.enc",
+	"modified": 1628497174,
+	"md5filehash": "f1d7ad52b0b0fa3a8fe4eddb098d8604",
+	"size": 1193227
+},
+{
+	"id": 42,
+	"fname": "Filesystem.vcxproj",
+	"suffix": "vcxproj",
+	"path": "./Filesystem.vcxproj",
+	"modified": 1628497173,
+	"md5filehash": "ea70946e46785bd427736c4c1fd65e8e",
+	"size": 7105
+},
+{
+	"id": 43,
+	"fname": "Filesystem.vcxproj.filters",
+	"suffix": "filters",
+	"path": "./Filesystem.vcxproj.filters",
+	"modified": 1628497173,
+	"md5filehash": "2cded3c3564c3410fcc990c3574a5457",
+	"size": 962
+},
+{
+	"id": 44,
 	"fname": "Filesystem.vcxproj.user",
 	"suffix": "user",
 	"path": "./Filesystem.vcxproj.user",
 	"modified": 1628497173,
+	"md5filehash": "b97115c31582bcb2b6ab5f6f834db248",
 	"size": 165
+},
+{
+	"id": 45,
+	"fname": "flags.make",
+	"suffix": "make",
+	"path": "./CMakeFiles/filesystem.dir/flags.make",
+	"modified": 1628504548,
+	"md5filehash": "979ada9743b7d09c3789402167b041c9",
+	"size": 195
+},
+{
+	"id": 46,
+	"fname": "link.command.1.tlog",
+	"suffix": "tlog",
+	"path": "./x64/Debug/Filesystem.tlog/link.command.1.tlog",
+	"modified": 1628497174,
+	"md5filehash": "d83a8fba42085cb43e7fa8e2706f451a",
+	"size": 1322
+},
+{
+	"id": 47,
+	"fname": "link.read.1.tlog",
+	"suffix": "tlog",
+	"path": "./x64/Debug/Filesystem.tlog/link.read.1.tlog",
+	"modified": 1628497174,
+	"md5filehash": "cc873e45c0cd0ac8845b5a9a5b806e3f",
+	"size": 3706
+},
+{
+	"id": 48,
+	"fname": "link.txt",
+	"suffix": "txt",
+	"path": "./CMakeFiles/filesystem.dir/link.txt",
+	"modified": 1628505411,
+	"md5filehash": "54b54928678d2b583fb40c012e7f9317",
+	"size": 114
+},
+{
+	"id": 49,
+	"fname": "link.write.1.tlog",
+	"suffix": "tlog",
+	"path": "./x64/Debug/Filesystem.tlog/link.write.1.tlog",
+	"modified": 1628497174,
+	"md5filehash": "1995b34e88656e46fc2200f15b0a12e3",
+	"size": 568
+},
+{
+	"id": 50,
+	"fname": "Makefile",
+	"suffix": "",
+	"path": "./Makefile",
+	"modified": 1628505411,
+	"md5filehash": "86eeb0823a690269c6219cd31ab86fa5",
+	"size": 5582
+},
+{
+	"id": 51,
+	"fname": "Makefile.cmake",
+	"suffix": "cmake",
+	"path": "./CMakeFiles/Makefile.cmake",
+	"modified": 1628505411,
+	"md5filehash": "f5fa7a7ac6f7aa97b98cb4127eb968a4",
+	"size": 1983
+},
+{
+	"id": 52,
+	"fname": "Makefile2",
+	"suffix": "",
+	"path": "./CMakeFiles/Makefile2",
+	"modified": 1628505411,
+	"md5filehash": "32e05840b87965f451ca836def902949",
+	"size": 3334
+},
+{
+	"id": 53,
+	"fname": "md5.cpp",
+	"suffix": "cpp",
+	"path": "./md5.cpp",
+	"modified": 1628505293,
+	"md5filehash": "bae53aa53b3012b1e61688650ac1d30f",
+	"size": 10806
+},
+{
+	"id": 54,
+	"fname": "md5.cpp.o",
+	"suffix": "o",
+	"path": "./CMakeFiles/filesystem.dir/md5.cpp.o",
+	"modified": 1628505412,
+	"md5filehash": "8d1d9049db1fdeef37836326580facfd",
+	"size": 10736
+},
+{
+	"id": 55,
+	"fname": "md5.h",
+	"suffix": "h",
+	"path": "./md5.h",
+	"modified": 1628505293,
+	"md5filehash": "e15d38583542cfdb3e6c7c958883b4e3",
+	"size": 1921
+},
+{
+	"id": 56,
+	"fname": "progress.make",
+	"suffix": "make",
+	"path": "./CMakeFiles/filesystem.dir/progress.make",
+	"modified": 1628505411,
+	"md5filehash": "e28e6ce446a2cebe49feeb945450202f",
+	"size": 64
+},
+{
+	"id": 57,
+	"fname": "progress.marks",
+	"suffix": "marks",
+	"path": "./CMakeFiles/progress.marks",
+	"modified": 1628505411,
+	"md5filehash": "6d7fce9fee471194aa8b5b6e47267f03",
+	"size": 2
+},
+{
+	"id": 58,
+	"fname": "TargetDirectories.txt",
+	"suffix": "txt",
+	"path": "./CMakeFiles/TargetDirectories.txt",
+	"modified": 1628505411,
+	"md5filehash": "857fbe75c330da857be0a1807adba5e6",
+	"size": 198
+},
+{
+	"id": 59,
+	"fname": "test.json",
+	"suffix": "json",
+	"path": "./test.json",
+	"modified": 1628510936,
+	"md5filehash": "d41d8cd98f00b204e9800998ecf8427e",
+	"size": 0
+},
+{
+	"id": 60,
+	"fname": "test.log",
+	"suffix": "log",
+	"path": "./test.log",
+	"modified": 1628510936,
+	"md5filehash": "d41d8cd98f00b204e9800998ecf8427e",
+	"size": 0
+},
+{
+	"id": 61,
+	"fname": "unsuccessfulbuild",
+	"suffix": "",
+	"path": "./Debug/Filesystem.tlog/unsuccessfulbuild",
+	"modified": 1628497173,
+	"md5filehash": "d41d8cd98f00b204e9800998ecf8427e",
+	"size": 0
+},
+{
+	"id": 62,
+	"fname": "vc142.idb",
+	"suffix": "idb",
+	"path": "./Debug/vc142.idb",
+	"modified": 1628497173,
+	"md5filehash": "2dc36bd7969e34d56d103b7ebeaa728b",
+	"size": 19456
+},
+{
+	"id": 63,
+	"fname": "vc142.idb",
+	"suffix": "idb",
+	"path": "./x64/Debug/vc142.idb",
+	"modified": 1628497174,
+	"md5filehash": "99bfeaefc23c123bcb687c063d90ecbc",
+	"size": 199680
+},
+{
+	"id": 64,
+	"fname": "vc142.pdb",
+	"suffix": "pdb",
+	"path": "./x64/Debug/vc142.pdb",
+	"modified": 1628497174,
+	"md5filehash": "b1d0a9203e21a01834bfa5757c5d5e1c",
+	"size": 700416
+},
+{
+	"id": 65,
+	"fname": "vc142.pdb",
+	"suffix": "pdb",
+	"path": "./Debug/vc142.pdb",
+	"modified": 1628497173,
+	"md5filehash": "5dd13075feee6f15adaf22191d6d6b95",
+	"size": 235008
 },

@@ -9,6 +9,10 @@
 /home/sam/git/FilesystemGen/Filesystem/Filesystem.cpp
 algorithm
 -
+cctype
+-
+cstdint
+-
 filesystem
 -
 fstream
@@ -18,5 +22,13 @@ iostream
 string
 -
 vector
+-
+md5.h
+/home/sam/git/FilesystemGen/Filesystem/md5.h
+
+/home/sam/git/FilesystemGen/Filesystem/md5.h
+string
+-
+stdint.h
 -
 
