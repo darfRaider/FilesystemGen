@@ -7,7 +7,15 @@
 #IncludeRegexTransform: 
 
 /home/sam/git/FilesystemGen/Filesystem/Filesystem.cpp
+jsoncpp/json/json.h
+-
+jsoncpp/json/value.h
+-
 algorithm
+-
+boost/algorithm/string.hpp
+-
+boost/algorithm/string/case_conv.hpp
 -
 cctype
 -
@@ -18,6 +26,8 @@ filesystem
 fstream
 -
 iostream
+-
+map
 -
 string
 -

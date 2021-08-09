@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.16.3)
 project(FilesystemReader)
 set(CMAKE_CXX_STANDARD 17)
+find_package(jsoncpp REQUIRED) 
 #set(DCMAKE_CXX_COMPILER /usr/bin/g++-9 )
 add_executable(filesystem Filesystem.cpp md5.cpp)
+target_link_libraries(filesystem jsoncpp)

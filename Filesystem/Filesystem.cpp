@@ -1,9 +1,15 @@
+#include <jsoncpp/json/json.h>
+#include <jsoncpp/json/value.h>
+
 #include <algorithm>
+#include <boost/algorithm/string.hpp>
+#include <boost/algorithm/string/case_conv.hpp>
 #include <cctype>
 #include <cstdint>
 #include <filesystem>
 #include <fstream>
 #include <iostream>
+#include <map>
 #include <string>
 #include <vector>
 
@@ -75,7 +81,23 @@ bool cmp_strings(const File* a, const File* b) {
     return (n_a > n_b);*/
 }
 
+void read_json(std::map<std::string, std::string>& map) {
+  std::ifstream file("defaultSuffixMap.json", std::ifstream::binary);
+  Json::Value data;
+  file >> data;
+  int n_suffixes = data.getMemberNames().size();
+  for (int i = 0; i < n_suffixes; i++) {
+    Json::Value key = data.getMemberNames()[i];
+
+    std::string value = data[key.asString()].asString();
+    map.insert(std::pair<std::string, std::string>(key.asString(), value));
+  }
+  std::cout << map.size() << std::endl;
+  std::cout << map["iges"] << std::endl;
+}
+
 int main(int argc, char** argv) {
+  // MD5 Stuff
   const size_t BufferSize = 144 * 7 * 1024;
   std::istream* input = NULL;
   std::ifstream file;
@@ -130,12 +152,24 @@ int main(int argc, char** argv) {
       std::cout << "Exception caught: " << e.what() << std::endl;
     }
   }
+
+  // Default suffix map
+  std::map<std::string, std::string> mp;
+  read_json(mp);
+
   std::sort(res.begin(), res.end(), cmp_strings);
   int id_cnt = 0;
   for (auto e : res) {
     e->id = id_cnt;
+    std::string defaultSuffix(e->suffix);
+    boost::to_lower(defaultSuffix);
+    if (mp.count(defaultSuffix)) {
+      std::cout << defaultSuffix << "," << mp[defaultSuffix] << std::endl;
+      defaultSuffix = mp[defaultSuffix];
+    }
+    e->defaultSuffix = defaultSuffix;
     print_file(*e, myFile);
-    std::cout << e->filename << std::endl;
+    // std::cout << e->filename << std::endl;
     id_cnt++;
   }
   myFile.close();
@@ -166,6 +200,9 @@ void print_file(const File& f, std::ofstream& filestream) {
              << "\"fname\": \"" << f.filename << "\"," << std::endl;
   filestream << "\t"
              << "\"suffix\": \"" << f.suffix << "\"," << std::endl;
+  filestream << "\t"
+             << "\"defaultSuffix\": \"" << f.defaultSuffix << "\","
+             << std::endl;
   filestream << "\t"
              << "\"path\": \"" << f.path << "\"," << std::endl;
   filestream << "\t"
