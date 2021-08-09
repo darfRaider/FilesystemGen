@@ -1,3 +1,0 @@
-/home/sam/git/FilesystemGen/Filesystem/CMakeFiles/rebuild_cache.dir
-/home/sam/git/FilesystemGen/Filesystem/CMakeFiles/edit_cache.dir
-/home/sam/git/FilesystemGen/Filesystem/CMakeFiles/filesystem.dir
