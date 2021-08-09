@@ -65,24 +65,11 @@ bool cmp_strings(const File* a, const File* b) {
     if (x != y) return x < y;
   }
   return n_a < n_b;
-  // return std::toupper(x) < std::toupper(y);
-  /*  int n_a = a->filename.length();
-    std::cout << n_a << std::endl;
-    int n_b = b->filename.length();
-    std::cout << "b " << n_b << std::endl;
-    char x, y;
-    std::cout << "exit" << std::endl;
-    for (int i = 0; i < std::min(n_a, n_b); i++) {
-      x = std::tolower(a->filename[i]);
-      y = std::tolower(b->filename[i]);
-      if (x < y) return true;
-      if (y > x) return false;
-    }
-    return (n_a > n_b);*/
 }
 
-void read_json(std::map<std::string, std::string>& map) {
-  std::ifstream file("defaultSuffixMap.json", std::ifstream::binary);
+void read_json(const std::string filename,
+               std::map<std::string, std::string>& map) {
+  std::ifstream file(filename, std::ifstream::binary);
   Json::Value data;
   file >> data;
   int n_suffixes = data.getMemberNames().size();
@@ -92,8 +79,25 @@ void read_json(std::map<std::string, std::string>& map) {
     std::string value = data[key.asString()].asString();
     map.insert(std::pair<std::string, std::string>(key.asString(), value));
   }
-  std::cout << map.size() << std::endl;
-  std::cout << map["iges"] << std::endl;
+}
+
+void read_json2(const std::string filename,
+                std::map<std::string, std::vector<std::string>>& map) {
+  std::ifstream file(filename, std::ifstream::binary);
+  Json::Value data;
+  file >> data;
+  int n_suffixes = data.getMemberNames().size();
+  for (int i = 0; i < n_suffixes; i++) {
+    Json::Value key = data.getMemberNames()[i];
+    Json::Value list = data[key.asString()];
+    std::vector<std::string> vec;
+    for (auto it = list.begin(); it != list.end(); it++) {
+      vec.push_back(list[it.index()].asString());
+    }
+    map.insert(
+        std::pair<std::string, std::vector<std::string>>(key.asString(), vec));
+    // map.insert(std::pair<std::string, std::string>(key.asString(), value));
+  }
 }
 
 int main(int argc, char** argv) {
@@ -154,31 +158,39 @@ int main(int argc, char** argv) {
   }
 
   // Default suffix map
-  std::map<std::string, std::string> mp;
-  read_json(mp);
+  std::map<std::string, std::string> defaultSuffixMap;
+  read_json("defaultSuffixMap.json", defaultSuffixMap);
+
+  std::map<std::string, std::vector<std::string>> classMap;
+  read_json2("fileClasses.json", classMap);
 
   std::sort(res.begin(), res.end(), cmp_strings);
   int id_cnt = 0;
   for (auto e : res) {
+    // Set unique id
     e->id = id_cnt;
+    // Set default default suffix
     std::string defaultSuffix(e->suffix);
     boost::to_lower(defaultSuffix);
-    if (mp.count(defaultSuffix)) {
-      std::cout << defaultSuffix << "," << mp[defaultSuffix] << std::endl;
-      defaultSuffix = mp[defaultSuffix];
+    if (defaultSuffixMap.count(defaultSuffix)) {
+      defaultSuffix = defaultSuffixMap[defaultSuffix];
     }
     e->defaultSuffix = defaultSuffix;
+    // Set filetype
+    e->filetype = "UNKNOWN";
+    for (auto const k : classMap) {
+      for (auto const v : k.second) {
+        if (std::strcmp(v.c_str(), defaultSuffix.c_str()) == 0) {
+          e->filetype = k.first;
+          break;
+        }
+      }
+    }
+    // Print to file
     print_file(*e, myFile);
-    // std::cout << e->filename << std::endl;
     id_cnt++;
   }
   myFile.close();
-  /*
-    for (uint32_t i = 0; i < res.size(); i++) {
-      res[i]->id = i;
-      print_file(*res[i], myFile);
-    }
-  */
   std::cout << "Found " << res.size() << " files (reading " << n_reads_failed
             << " failed)." << std::endl;
   return 0;
@@ -203,6 +215,8 @@ void print_file(const File& f, std::ofstream& filestream) {
   filestream << "\t"
              << "\"defaultSuffix\": \"" << f.defaultSuffix << "\","
              << std::endl;
+  filestream << "\t"
+             << "\"filetype\": \"" << f.filetype << "\"," << std::endl;
   filestream << "\t"
              << "\"path\": \"" << f.path << "\"," << std::endl;
   filestream << "\t"
