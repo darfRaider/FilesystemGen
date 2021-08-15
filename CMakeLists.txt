@@ -10,4 +10,3 @@ add_executable(filesystem
     src/Logger.cpp
     src/md5.cpp)
 target_link_libraries(filesystem jsoncpp stdc++fs)
-Install(TARGETS filesystem DESTINATION /bin)
