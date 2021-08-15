@@ -6,3 +6,4 @@ test.json
 test.log
 *.swp
 filesystem
+.ipynb_checkpoints
