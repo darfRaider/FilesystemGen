@@ -8,6 +8,7 @@
 
 //#include "hash.h"
 #include <string>
+#include <fstream>
 
 // define fixed size integer types
 #ifdef _MSC_VER
@@ -53,9 +54,13 @@ public:
 
   /// return latest hash as 32 hex characters
   std::string getHash();
+  
   /// return latest hash as bytes
-  void        getHash(unsigned char buffer[HashBytes]);
+  void getHash(unsigned char buffer[HashBytes]);
 
+  /// return filehash
+  std::string getFileHash(const std::string& path);
+  
   /// restart
   void reset();
 
@@ -75,4 +80,9 @@ private:
   enum { HashValues = HashBytes / 4 };
   /// hash, stored as integers
   uint32_t m_hash[HashValues];
+  
+  /// Constants for files
+  size_t FileBufferSize;
+  std::istream* FileInput;
+  std::ifstream File;
 };

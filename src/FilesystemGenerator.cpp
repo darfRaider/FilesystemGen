@@ -5,22 +5,6 @@
 template <typename TP>
 std::time_t to_time_t(TP tp);
 
-void print_file(const File& f, std::ofstream& filestream);
-void print_json_file(const std::vector<File*>& f, std::ofstream& filestream);
-
-bool cmp_strings(const File* a, const File* b) {
-  int n_a = a->filename.length();
-  int n_b = b->filename.length();
-  char x, y;
-
-  for (int i = 0; i < std::min(n_a, n_b); i++) {
-    x = std::toupper(a->filename[i]);
-    y = std::toupper(b->filename[i]);
-    if (x != y) return x < y;
-  }
-  return n_a < n_b;
-}
-
 void read_json(const std::string filename,
                std::map<std::string, std::string>& map) {
   std::ifstream file(filename, std::ifstream::binary);
@@ -53,10 +37,10 @@ void read_json2(const std::string filename,
 }
 
 int main(int argc, char** argv) {
-  // MD5 Stuff
-  const size_t BufferSize = 144 * 7 * 1024;
-  std::istream* input = NULL;
-  std::ifstream file;
+  std::string fname = "Filesystem.json";
+  bool READ_MD5 = true;
+  int md5_size_threshold = 25e6;
+  MD5 md5;
   int n_reads_failed = 0;
   std::string root_dir_str;
   if (argc > 1) {
@@ -67,45 +51,41 @@ int main(int argc, char** argv) {
   std::vector<File*> res;
   std::string root_dir(root_dir_str);
   std::filesystem::path p(root_dir.c_str());
-  Logger l("test.log");
-  l.write_log_entry("\nTESTLI");
-
-  for (const auto& dirEntry : recursive_directory_iterator(p)) {
-    try {
-      if (dirEntry.is_regular_file()) {
-        File* f = new File;
-        f->filename = dirEntry.path().filename().u8string().c_str();
-        std::string suffix = dirEntry.path().extension().u8string();
-        if (!suffix.empty()) {
-          suffix.erase(suffix.begin());
-          f->suffix = suffix;
+  Logger l("LogFilesystem.log");
+  try {
+    for (const auto& dirEntry : recursive_directory_iterator(
+             p, std::filesystem::directory_options::skip_permission_denied)) {
+      try {
+        if (dirEntry.is_regular_file()) {
+          File* f = new File;
+          f->filename = dirEntry.path().filename().u8string().c_str();
+          std::string suffix = dirEntry.path().extension().u8string();
+          if (!suffix.empty()) {
+            suffix.erase(suffix.begin());
+            f->suffix = suffix;
+          }
+          f->path = dirEntry.path().u8string().c_str();
+          l.write_checkpoint(f->path.c_str());
+          std::replace(f->path.begin(), f->path.end(), '\\', '/');
+          f->modified = to_time_t(dirEntry.last_write_time());
+          f->size = dirEntry.file_size();
+          // MD5 stuff
+          if (READ_MD5 == true && f->size < md5_size_threshold)
+            f->md5filehash = md5.getFileHash(f->path).c_str();
+          res.push_back(f);
         }
-        f->path = dirEntry.path().u8string().c_str();
-        std::replace(f->path.begin(), f->path.end(), '\\', '/');
-        f->modified = to_time_t(dirEntry.last_write_time());
-        f->size = dirEntry.file_size();
-        res.push_back(f);
-        // MD5 stuff
-        MD5 md5;
-        char* buffer = new char[BufferSize];
-        file.open(f->path.c_str(), std::ios::in | std::ios::binary);
-        input = &file;
-        while (*input) {
-          input->read(buffer, BufferSize);
-          std::size_t numBytesRead = size_t(input->gcount());
-          md5.add(buffer, numBytesRead);
-        }
-        f->md5filehash = md5.getHash().c_str();
-        file.close();
-        //     print_file(*f, myFile);
-        delete[] buffer;
+      } catch (const std::exception& e) {
+        n_reads_failed++;
+        std::cout << "Exception caught: " << e.what() << std::endl;
       }
-    } catch (const std::exception& e) {
-      n_reads_failed++;
-      std::cout << "Exception caught: " << e.what() << std::endl;
     }
+  } catch (const std::exception& e) {
+    l.write_checkpoint("Exception occured. Filesystem generation failed.");
+    std::cout << "Something went wrong" << std::endl;
+    std::cout << "Exception caught: " << e.what() << std::endl;
+    return EXIT_FAILURE;
   }
-
+  l.write_footer();
   // Default suffix map
   std::map<std::string, std::string> defaultSuffixMap;
   read_json("defaultSuffixMap.json", defaultSuffixMap);
@@ -138,9 +118,21 @@ int main(int argc, char** argv) {
   }
   std::cout << "Found " << res.size() << " files (reading " << n_reads_failed
             << " failed)." << std::endl;
-  std::string fname = "test.json";
   JsonHandler::to_json(res, fname);
   return 0;
+}
+
+bool cmp_strings(const File* a, const File* b) {
+  int n_a = a->filename.length();
+  int n_b = b->filename.length();
+  char x, y;
+
+  for (int i = 0; i < std::min(n_a, n_b); i++) {
+    x = std::toupper(a->filename[i]);
+    y = std::toupper(b->filename[i]);
+    if (x != y) return x < y;
+  }
+  return n_a < n_b;
 }
 
 template <typename TP>

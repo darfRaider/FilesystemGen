@@ -15,6 +15,8 @@
 MD5::MD5()
 {
   reset();
+  FileBufferSize = 144 * 7 * 1024;
+  FileInput = NULL;
 }
 
 
@@ -376,5 +378,21 @@ std::string MD5::operator()(const std::string& text)
 {
   reset();
   add(text.c_str(), text.size());
+  return getHash();
+}
+
+/// Compute MD5 of a file
+std::string MD5::getFileHash(const std::string& path){
+  reset();
+  char* buffer = new char[FileBufferSize];
+  File.open(path.c_str(), std::ios::in | std::ios::binary);
+  FileInput = &File;
+  while (*FileInput) {
+    FileInput->read(buffer, FileBufferSize);
+    std::size_t numBytesRead = size_t(FileInput->gcount());
+    add(buffer, numBytesRead);
+  }
+  File.close();
+  delete[] buffer;
   return getHash();
 }

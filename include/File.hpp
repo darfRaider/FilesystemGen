@@ -1,5 +1,5 @@
-#ifndef File_H
-#define File_H
+#ifndef FILE_H
+#define FILE_H
 #include <jsoncpp/json/value.h>
 
 struct File {
