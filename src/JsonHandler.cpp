@@ -11,6 +11,6 @@ void JsonHandler::to_json(const std::vector<File *> &input,
   }
   Json::StyledWriter styledWriter;
   file << styledWriter.write(json_objects);
-  Json::Value AllFiles(Json::arrayValue);
+ // Json::Value AllFiles(Json::arrayValue);
   file.close();
 }
